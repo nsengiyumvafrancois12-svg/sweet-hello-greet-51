@@ -189,6 +189,47 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Founder & CEO Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Leadership</h2>
+              <p className="text-lg text-muted-foreground">
+                Meet the visionary behind Jonathan Group Rwanda
+              </p>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="lg:w-1/3">
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/576421b4-d66a-4443-8aea-f9f75901110d.png" 
+                    alt="Jonathan Nsengimana - Founder and CEO" 
+                    className="w-full max-w-sm mx-auto rounded-2xl shadow-[var(--shadow-glow)]"
+                  />
+                </div>
+              </div>
+              
+              <div className="lg:w-2/3 text-center lg:text-left">
+                <h3 className="text-2xl font-bold mb-2">Jonathan Nsengimana</h3>
+                <p className="text-lg text-primary mb-6 font-semibold">Founder and CEO</p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  With a passion for transforming Rwanda's agricultural sector through innovative food processing, 
+                  Jonathan Nsengimana leads Jonathan Group Rwanda with a vision to create sustainable value 
+                  from local resources while meeting international quality standards.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Under his leadership, the company has established itself as a key player in cereal processing, 
+                  serving all 30 districts of Rwanda and positioning for regional expansion with a commitment 
+                  to excellence and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-16 bg-gradient-to-br from-[hsl(var(--food-green)/0.1)] to-[hsl(var(--food-orange)/0.1)]">
         <div className="container mx-auto px-4">
