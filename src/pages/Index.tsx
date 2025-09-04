@@ -10,29 +10,71 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[hsl(var(--food-green)/0.1)] via-[hsl(var(--food-orange)/0.1)] to-[hsl(var(--food-blue)/0.1)] py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg')] opacity-5"></div>
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-4 bg-[hsl(var(--food-green)/0.1)] border-primary">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/1a8e5fef-cdeb-4579-9589-31c6a366844c.png')`
+          }}
+        ></div>
+        
+        {/* Gradient Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+        
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-6 bg-white/10 border-white/20 text-white backdrop-blur-sm">
               <Factory className="w-4 h-4 mr-2" />
               Food Processing Excellence
             </Badge>
-            <h1 className="text-6xl font-bold text-foreground mb-6 bg-gradient-to-r from-[hsl(var(--food-green))] to-[hsl(var(--food-orange))] bg-clip-text text-transparent">
-              JONATHAN GROUP RWANDA Ltd
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              JONATHAN GROUP
+              <span className="block bg-gradient-to-r from-[hsl(var(--food-orange))] to-[hsl(var(--food-blue))] bg-clip-text text-transparent">
+                RWANDA Ltd
+              </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
               A registered food processing company transforming Rwanda's agricultural potential 
               through quality cereal processing, located in Kigali's Special Economic Zone.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-[hsl(var(--food-green))] to-[hsl(var(--food-orange))] hover:opacity-90 shadow-[var(--shadow-glow)]">
+              <Button size="lg" className="bg-gradient-to-r from-[hsl(var(--food-green))] to-[hsl(var(--food-orange))] hover:opacity-90 shadow-2xl text-white font-semibold px-8 py-4">
                 Our Products
               </Button>
-              <Button variant="outline" size="lg" className="border-primary hover:bg-primary/10">
+              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-4">
                 Contact Us
               </Button>
             </div>
+            
+            {/* Stats Bar */}
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">312</h3>
+                <p className="text-white/80 text-sm">Tons Rice/Month</p>
+              </div>
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">208</h3>
+                <p className="text-white/80 text-sm">Tons Maize/Month</p>
+              </div>
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">312</h3>
+                <p className="text-white/80 text-sm">Tons Feeds/Month</p>
+              </div>
+              <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">30</h3>
+                <p className="text-white/80 text-sm">Districts Covered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
           </div>
         </div>
       </section>
