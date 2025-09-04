@@ -22,9 +22,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Factory className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">Jonathan Group</span>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/5b2a3924-3564-4cf1-9cc1-238081bbdf79.png" 
+              alt="Jonathan Group Rwanda Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
