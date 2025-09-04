@@ -247,13 +247,49 @@ const Index = () => {
                 Request Quote
               </Button>
             </div>
-            <div className="mt-8 text-sm text-muted-foreground">
-              <p>📍 Kigali Special Economic Zone, Masoro, Rwanda</p>
-              <p>🌍 Serving all 30 districts of Rwanda</p>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-[hsl(var(--food-green))] text-primary-foreground py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <img 
+                src="/lovable-uploads/5b2a3924-3564-4cf1-9cc1-238081bbdf79.png" 
+                alt="Jonathan Group Rwanda" 
+                className="h-12 w-auto mb-4"
+              />
+              <p className="text-primary-foreground/80">
+                Transforming Rwanda's agricultural sector through innovative food processing.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Contact Information</h3>
+              <div className="space-y-2 text-primary-foreground/80">
+                <p>Email: info@jonathangroup.rw</p>
+                <p>Tel: 0783273848</p>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4">Address</h3>
+              <p className="text-primary-foreground/80">
+                Kigali, Gasabo, Masoro<br />
+                Rwanda
+              </p>
+            </div>
+          </div>
+          
+          <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
+            <p className="text-primary-foreground/60">
+              © 2024 Jonathan Group Rwanda. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
